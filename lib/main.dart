@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => { mPrincipal() };
+void main() => { runApp(mPrincipal()) };
 
 class mPrincipal extends StatelessWidget {
 
@@ -29,9 +29,13 @@ class _mInicioState extends State<mInicio> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Hola'),
+        backgroundColor: Colors.amber,
       ),
+      backgroundColor: Colors.red,
       body: Center(
-        child: Text('Programacion de aplicaciones moviles'),
+        child: ElevatedButton(onPressed: (){},
+            child: Text('Aprobar')
+        )
       )
     );
   }
