@@ -32,10 +32,11 @@ class _mInicioState extends State<mInicio> {
         backgroundColor: Colors.amber,
       ),
       backgroundColor: Colors.red,
-      body: Center(
-        child: ElevatedButton(onPressed: (){},
-            child: Text('Aprobar')
-        )
+      body: ListView(
+        children: [
+          Container(child: Center(child: Text('Elemento B1'))),
+          Container(child: Center(child: Image.network('https://i.imgur.com/oP3d3pB.png', width: 200,)))
+        ],
       )
     );
   }
